@@ -1,14 +1,17 @@
 import 'dotenv/config'
 
+
 import  express from 'express'
 import cors from 'cors'
-import endpoints from './endpoints.js'
+
+import petController from './controller/petscontroller.js'
 
 const server = express();
 
 server.use(cors());
 server.use(express.json());
-server.use(endpoints);
+server.use(petController)
+
 
 server.listen(process.env.PORT, () => 
     (console.log(`API online na porta ${process.env.PORT}`)));
