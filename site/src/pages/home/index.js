@@ -6,10 +6,10 @@ export default function Home(){
     const navigate = useNavigate();
 
     function navegarCadastroClick(){
-        navigate('/pets/cadastrar')
+        navigate('/pet/cadastrar')
     }
     function navegarConsultaClick(){
-        navigate('pets/consultar')
+        navigate('pet/consultar')
     }
     return(
         <main>

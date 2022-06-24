@@ -27,14 +27,14 @@ export default function ConsultarPets(){
                     </div>
                     <div>
                         <table>
-                            <td>
-                                <ol> ID </ol>
-                                <ol> Nome </ol>
-                            </td>
-                            <th>
-                                <ol> {pet.id} </ol>
-                                <ol> {pet.nome} </ol>
-                            </th>
+                            <tr>
+                                <th> ID </th>
+                                <th> Nome </th>
+                            </tr>
+                            <tr>
+                                <td>{pet.id}</td>
+                                <td>{pet.nome}</td>
+                            </tr>
                         </table>
                     </div>
                 </section>
