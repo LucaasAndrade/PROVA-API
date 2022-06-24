@@ -6,7 +6,8 @@ const server = Router();
 server.post('/pets', async (req, resp) => {
     try{
         const petParaInserir = req.body;
-
+        if(!petParaInserir.nome)
+            throw new Error('Nome pet é obrigatório')
         const petInserido = await inserirPet(petParaInserir);
 
         resp.send(petInserido);
